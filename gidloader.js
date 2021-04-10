@@ -176,7 +176,7 @@ if (hasFBInstant) {
 	FBInstant.initializeAsync();
 }
 var progressCur=0;
-var progressMax=6830010;
+var progressMax=3259109;
 function downloadProgress(diff) {
 	progressCur+=diff;
 	var pro=100*progressCur/progressMax;
@@ -200,7 +200,7 @@ function getParameterByName(name, url) {
             return decodeURIComponent(results[2].replace(/\+/g," "));
      }      
   var GAPP_URL=null;
-  GAPP_URL="Zomball.GApp.gidz";
+  //GAPP_URL="gideros.GApp";
   var uarg=getParameterByName("GIDEROS_GAPP");
   if ((uarg!=null) && (uarg!=""))
     GAPP_URL=uarg;
@@ -225,11 +225,11 @@ function getParameterByName(name, url) {
     preInit: [],
     TOTAL_MEMORY: GIDEROS_MEMORY_MB*1024*1024,
     GiderosPlugins: [   /*GIDEROS_DYNLIB_PLUGIN*/
-"OggCore.gidz",
-"OggVorbis.gidz",
-"OggOpus.gidz",
-"json.gidz",
-"liquidfun.gidz", null ],
+"OggCore.wasm",
+"OggVorbis.wasm",
+"OggOpus.wasm",
+"json.wasm",
+"liquidfun.wasm", null ],
     JSPlugins: [ /*GIDEROS_JS_PLUGIN*/ null ],
     requestFile: function (file) { return 0; },
     print: (function() {
