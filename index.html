@@ -51,7 +51,8 @@
     <script src="https://connect.facebook.net/en_US/fbinstant.6.3.js"></script>
 GIDEROS-FBINSTANT-END -->
     <script src=gidloader.js></script>
-    <script async src=gideros-wasm.js></script>
+    <script async >
+JPZLoad('gideros-wasm.wasm.gidz',function(c) { Module.wasmBinary=c; JPZLoad('gideros-wasm.js.gidz',eval); },"array");</script>
   </body>
 </html>
 
