@@ -176,7 +176,7 @@ if (hasFBInstant) {
 	FBInstant.initializeAsync();
 }
 var progressCur=0;
-var progressMax=6830710;
+var progressMax=6832553;
 function downloadProgress(diff) {
 	progressCur+=diff;
 	var pro=100*progressCur/progressMax;
@@ -228,8 +228,8 @@ function getParameterByName(name, url) {
 "OggCore.gidz",
 "OggVorbis.gidz",
 "OggOpus.gidz",
-"liquidfun.gidz",
-"json.gidz", null ],
+"json.gidz",
+"liquidfun.gidz", null ],
     JSPlugins: [ /*GIDEROS_JS_PLUGIN*/ null ],
     requestFile: function (file) { return 0; },
     print: (function() {

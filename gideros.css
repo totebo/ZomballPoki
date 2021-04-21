@@ -2,6 +2,8 @@
 padding-left:0; padding-top:0; padding-bottom:0; margin-top:0;
 margin-bottom:0; position: absolute; width:100%; height: 100%;
 border: 0px none;
+color: white;
+font-family: Arial;
 }
 .toplevel {
 	position:fixed !important;
@@ -18,7 +20,7 @@ div.emscripten_border { border: 0px solid black; }
 }
 
 #progress_box {
- margin: 5px;
+ margin: 10px;
 }
 #oops {
 	background-color: #fff;
@@ -30,13 +32,18 @@ div.emscripten_border { border: 0px solid black; }
   -moz-animation: rotation .8s linear infinite;
   -o-animation: rotation .8s linear infinite;
   animation: rotation 0.8s linear infinite;
-  border-left: 7px solid rgb(184,63,59);
-  border-right: 7px solid rgb(144,202,68);
-  border-bottom: 7px solid rgb(252,155,0);
-  border-top: 7px solid rgb(96,159,189);
+  border-left: 7px solid rgb(143,0,169);
+  border-right: 7px solid rgb(143,0,169);
+  border-bottom: 7px solid rgb(143,0,169);
+  border-top: 7px solid rgb(209,238,7);
   border-radius: 100%;
   background-color: rgb(72,72,72);
 }
+
+div.status {
+  color: pink;
+}
+
 @-webkit-keyframes rotation {
   from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}
